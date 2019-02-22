@@ -1,0 +1,17 @@
+Private Sub Form_Load()
+'This will hide menu option
+    '==========================
+   ' DoCmd.Maximize
+    'DoCmd.SelectObject acTable, strTable, True
+    'DoCmd.RunCommand acCmdWindowHide
+
+ 
+    
+    'This code below is to hide ribbon, menu
+    If pubShowRibbonBar = False Then
+        DoCmd.ShowToolbar "Ribbon", acToolbarNo
+    Else
+        DoCmd.ShowToolbar "Ribbon", acToolbarYes
+    End If
+
+End Sub
